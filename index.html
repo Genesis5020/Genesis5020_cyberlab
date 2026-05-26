@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/x-icon" href="logo/avc.png">
-<title>adoVM CYBERLAB</title>
+<link rel="icon" type="image/x-icon" href="logo/MCL.png">
+<title>Makdo CYbER LAb YU</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 <link rel="stylesheet" href="style.css">
@@ -19,9 +19,44 @@
 <header class="header">
   <div class="logo">
 <pre>
-▄▀█ █▀▄ █▀█ █░█ █▀▄▀█   █▀▀ █▄█ █▄▄ █▀▀ █▀█   █░░ ▄▀█ █▄▄
-█▀█ █▄▀ █▄█ ▀▄▀ █░▀░█   █▄▄ ░█░ █▄█ ██▄ █▀▄   █▄▄ █▀█ █▄█
+  
+──────▄▀▄─────▄▀▄
+─────▄█░░▀▀▀▀▀░░█▄
+─▄▄──█░░░░░░░░░░░█──▄▄
+█▄▄█─█░░▀░░┬░░▀░░█─█▄▄█ 
 <div class="tagline">developed by xen0_byt3</div>
+█▀▄▀█ ▄▀█ █▄▀ █▀▄ █▀█   █▀▀ █▄█ █▄▄ █▀▀ █▀█   █░░ ▄▀█ █▄▄  █▄█ █░█
+█░▀░█ █▀█ █░█ █▄▀ █▄█   █▄▄ ░█░ █▄█ ██▄ █▀▄   █▄▄ █▀█ █▄█  ░█░ █▄█
+
+<div class="tagline">modified by His student genesis5020 - credits belongs to xen0byt3</div>
+</div>
+
+<style>
+.tagline {
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: moveTagline 10s linear infinite;
+}
+/* Dark mode: cyan glow */
+@media (prefers-color-scheme: dark) {
+  .tagline {
+    color: black;
+    text-shadow: 0 0 8px cyan;
+  }
+}
+/* Light mode: black text */
+@media (prefers-color-scheme: light) {
+  .tagline {
+    color: black;
+    text-shadow: black;
+  }
+}
+</style>
+
 </pre>
 
   <div class="status" id="statusIndicator">
@@ -40,9 +75,10 @@
 
 
 <div class="header">
-  <h2 style="margin:0;font-weight:600;letter-spacing:1px;">
-    Threat Hunting Dashboard
+  <h2 style="margin:0;font-weight:900;letter-spacing:1px;">
+    <strong>THREAT HUNTING DASHBOARD</strong>
   </h2>
+  
 
   <!-- TOGGLE SWITCH -->
   <div class="theme-toggle" onclick="toggleTheme()" id="themeBtn">
